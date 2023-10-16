@@ -11,6 +11,7 @@
 ### Install dependencies
 
 > If you use a NVIDIA GPU, install `hyprland-nvidia-git`
+
 > If you use an init system other than `systemd`, you're on your own
 
 ```sh
