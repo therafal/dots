@@ -1,0 +1,261 @@
+## ░█▀▀░▀█▀░█▀█░█▀▄░█▀▀░█░█░▀█▀░█▀█
+## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
+## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
+## CROSS-SHELL PROMPT
+## The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+format = """
+$hostname\
+$directory\
+
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$vcsh\
+$hg_branch\
+$docker_context\
+$package\
+$custom\
+
+$sudo\
+
+$fill\
+$git_branch\
+$git_status\
+$git_commit\
+$cmd_duration\
+$jobs\
+$battery\
+$status\
+$os\
+$container\
+$time\
+$shell\
+$line_break\
+$character"""
+
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+
+# Second param
+[hostname]
+ssh_only = true 
+format = "[](fg:red bg:none)[█](fg:white bg:black)[$ssh_symbol$hostname](bold bg:black)[](fg:white bg:none) "
+disabled = false
+
+# Third param
+[directory]
+format = "[](fg:black bg:none)[$path]($style)[█](fg:black bg:black)[](fg:blue bg:black)[ ](fg:black bg:blue)[](fg:blue bg:none)"
+style = "fg:white bg:black bold"
+truncation_length = 3
+truncate_to_repo=false
+read_only = " "
+
+## SECOND LINE/ROW: Prompt
+# Prompt: param 2 └─
+[character]
+success_symbol = "[ ](blue bold)"
+error_symbol = "[ ](red bold)"
+
+[line_break]
+disabled = false
+
+[fill]
+symbol = ' '
+style = 'bold green'
+
+[cmd_duration]
+min_time = 1
+format = "[](fg:black bg:none)[$duration]($style)[](fg:black bg:black)[](fg:purple bg:black)[󱑂 ](fg:black bg:purple)[](fg:purple bg:none)"
+disabled = false
+style = "fg:white bg:black bold"
+
+
+[git_branch]
+format = "[](fg:black bg:none)[$branch]($style)[](fg:black bg:black)[](fg:green bg:black)[](fg:black bg:green)[](fg:green bg:none) "
+style = "fg:white bg:black"
+symbol = " "
+
+[git_status]
+format="[](fg:black bg:none)[$all_status$ahead_behind]($style)[](fg:black bg:black)[](fg:blue bg:black)[ ](fg:black bg:blue)[](fg:blue bg:none) "
+style = "fg:white bg:black"
+conflicted = "󰇼"
+ahead =	"⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = "  "
+untracked = " ${count}"
+stashed = "󱧱 "
+modified = " ${count}"
+staged = " ${count}"
+renamed = " ${count}"
+deleted = " ${count}"
+
+[git_commit]
+format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "green"
+
+[git_state]
+rebase = "REBASING"
+merge =	"MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style =	"yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+
+[time]
+disabled = true
+format = "[](fg:black bg:none)[$time]($style)[](fg:black bg:black)[](fg:purple bg:black)[󱑂 ](fg:black bg:purple)[](fg:purple bg:none)"
+style = "fg:white bg:black bold"
+
+# # SYMBOLS
+
+[aws]
+symbol = "󰅟  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+# [directory]
+
+[docker_context]
+symbol = "󰡨 "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+[elixir]
+symbol = ""
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = "󱄅 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+#pyenv_version_name = true
+format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+style = "bold yellow"
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[nodejs]
+symbol = "󰎙 "
+format = 'via [${symbol}Node.js $version]($style)'
+style = "bold green"
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+# Other languages configurations:
+c.disabled = true
+cmake.disabled = true
+haskell.disabled = true
+python.disabled = true
+ruby.disabled = true
+rust.disabled = true
+perl.disabled = true
+package.disabled = true
+lua.disabled = true
+nodejs.disabled = true
+java.disabled = true
+golang.disabled = true
+
+# Battery
+
+[battery]
+disabled = false
+format = "[](fg:black bg:none)[$battery_icon$percentage]($style)[](fg:black bg:black)[](fg:yellow bg:black)[${symbol}](fg:black bg:yellow)[](fg:yellow bg:none)"
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
+
+[[battery.display]]
+threshold = 60
+discharging_symbol = "󰁿"
+style = "fg:white bg:black"
+
+[[battery.display]]
+threshold = 50
+discharging_symbol = "󰁾"
+style = "fg:white bg:black"
+
+[[battery.display]]
+threshold = 40
+discharging_symbol = "󰁽"
+style = "fg:white bg:black"
+
+[[battery.display]]
+threshold = 30
+discharging_symbol = "󰁼"
+style = "fg:yellow bg:black"
+
+[[battery.display]]
+threshold = 20
+discharging_symbol = "󰁻"
+style = "fg:yellow bg:black"
+
+[[battery.display]]
+threshold = 10
+discharging_symbol = "󰁺"
+style = "fg:red bg:black"

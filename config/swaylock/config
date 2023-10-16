@@ -1,0 +1,29 @@
+daemonize
+show-failed-attempts
+clock
+screenshot
+effect-blur=15x15
+effect-vignette=1:1
+color=00000070
+font="Iosevka"
+indicator
+indicator-radius=200
+indicator-thickness=15
+ring-color=1a1c25
+key-hl-color=82aaff
+text-color=a6acca
+text-caps-lock-color=""
+ring-ver-color=82aaff
+text-ver-color=82aaff
+ring-wrong-color=f07178
+text-wrong-color=f07178
+text-clear-color=ffcb6b
+ring-clear-color=ffcb6b
+bs-hl-color=ffcb6b
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+fade-in=0.3
+ignore-empty-password

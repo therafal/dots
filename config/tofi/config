@@ -1,0 +1,48 @@
+### Fonts
+
+font = "/usr/share/fonts/TTF/IosevkaNerdFont-Bold.ttf"
+hint-font = true
+font-size = 24
+
+### Text
+
+text-color = "#a6accd"
+selection-color = "#82aaff"
+
+### Window theming
+
+width = 100%
+height = 100%
+
+background-color = "#000000BF"
+
+border-width = 0
+outline-width = 0
+
+padding-left = 35%
+padding-top = 35%
+
+scale = true
+
+### Behaviour
+
+history = true
+
+require-match = true
+
+hidden-character = "*"
+
+physical-keybindings = false
+
+drun-launch = true
+
+hide-cursor = true
+
+### Results
+
+result-spacing = 25
+num-results = 5
+
+### Prompt
+
+prompt-text = "  Apps : "
