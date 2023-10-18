@@ -20,7 +20,7 @@ zsh-syntax-highlighting-git zsh-autosuggestions-git pipewire pipewire-pulse pipe
 wireplumber lsp-plugins calf glow-git mpv tofi-git lazygit-git neovim-git dunst-git swayidle-git \
 swaylock-effects-git grim slurp swappy wl-clipboard ripgrep npm bibata-cursor-theme hyprland-git \
 kora-icon-theme-git opentabletdriver-git xdg-desktop-portal-hyprland bottom cava-git kitty \
-neofetch 
+neofetch playerctl-git
 ```
 
 ### Set the zsh as a default shell
@@ -43,5 +43,5 @@ sudo cp -r etc/* /etc/
 git clone https://github.com/therafal/dots
 cd dots
 cp -r configs/* ~/.config/
-cp .zshrc ~
+cp home/* ~
 ```

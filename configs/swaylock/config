@@ -4,7 +4,7 @@ clock
 screenshot
 effect-blur=15x15
 effect-vignette=1:1
-color=00000070
+color=000000BF
 font="Iosevka"
 indicator
 indicator-radius=200

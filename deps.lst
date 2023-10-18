@@ -22,6 +22,7 @@ lsp-plugins
 calf
 glow-git
 mpv
+playerctl-git
 tofi-git
 lazygit-git
 neovim-git
