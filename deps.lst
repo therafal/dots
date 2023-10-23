@@ -3,7 +3,7 @@ tmux-git
 sddm-git
 sddm-s6
 kitty
-exa
+eza-git
 bat
 less
 neofetch
@@ -21,8 +21,12 @@ wireplumber
 lsp-plugins
 calf
 glow-git
+mpd
+ncmpcpp
 mpv
 playerctl-git
+yt-dlp
+python-mutagen
 tofi-git
 lazygit-git
 neovim-git
@@ -46,3 +50,4 @@ xdg-desktop-portal-hyprland-git
 eww-git
 bottom
 cava-git
+lf-git

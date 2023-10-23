@@ -1,0 +1,35 @@
+# Set tmux parameters
+neww
+set -g status off
+set -g default-terminal "xterm-kitty"
+set-option -ga terminal-overrides ",xterm-kitty:Tc"
+set -g mouse on
+
+# Create a pane for the album cover script (TODO)
+send-keys "stty -echo" C-m
+send-keys "tput civis -- invisible" C-m
+send-keys "export PS1=''" C-m
+send-keys "clear" C-m
+send-keys "echo TODO" C-m
+
+# Create a pane for ncmpcpp
+split-window -v
+select-pane -t 1
+send-keys "ncmpcpp" C-m
+
+# Create a pane for CAVA visualizer
+select-pane -t 0
+split-window -h
+send-keys "cava" C-m
+
+# Resize image and visualizer pane to fit image
+resize-pane -t 0 -x 49 -y 28
+resize-pane -t 1 -y 23
+
+# Hook to keep the image pane size consistent
+set-hook client-resized 'resize-pane -t 0 -x 49 -y 23'
+
+# Focus on ncmpcpp
+select-pane -t 2
+
+bind-key -n q kill-session

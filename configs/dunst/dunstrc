@@ -18,6 +18,8 @@
     notification_limit = 20
 
     frame_width = 0
+    
+    background = "#000000CC"
 
     ### Progress bar ###
     
@@ -115,14 +117,12 @@
     mouse_right_click = close_all
 
 [urgency_low]
-    background = "#000000BF"
     foreground = "#a6accd"
     # icon = "~/.config/dunst/icons/low.svg"
     timeout = 10
     # default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#000000BF"
     foreground = "#a6accd"
     # icon = "~/.config/dunst/icons/normal.svg"
     timeout = 10
@@ -130,7 +130,6 @@
     # default_icon = /path/to/icon
 
 [urgency_critical]
-    background = "#000000BF"
     foreground = "#f07178"
     # icon = "~/.config/dunst/icons/critical.svg"
     timeout = 0
