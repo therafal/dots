@@ -24,7 +24,7 @@ send-keys "ncmpcpp && tmux kill-session" C-m
 # Create a pane for CAVA visualizer
 select-pane -t 0
 split-window -h
-send-keys "cava" C-m
+send-keys "cava && tmux kill-session" C-m
 
 # Resize image and visualizer pane to fit image
 resize-pane -t 0 -x 49 -y 28

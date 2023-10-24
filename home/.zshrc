@@ -34,35 +34,7 @@ plugins=(
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
-# Aliases
-alias in='paru -S'
-alias yeet='paru -Runs'
-alias l='eza -l --icons --git'
-alias ls='eza -l --icons --git'
-alias ll='eza -la --icons --git'
-alias ld='eza -lD --icons --git'
-alias bat='bat --theme="base16" --style="numbers,changes,header" --italic-text=always --decorations=always'
-alias cat='bat'
-alias cl='clear'
-alias icat='kitten icat'
-alias cpw='wl-copy'
-alias q='exit'
-alias lg='lazygit'
-alias nvim="$EDITOR"
-alias vim='nvim'
-alias vi='nvim'
-alias v='nvim'
-alias audl='yt-dlp -f bestaudio -x --audio-format opus --audio-quality 320k --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" --output "%(title)s.%(ext)s"'
-alias mp='tmux new-session -s $$ "tmux source-file ~/.config/ncmpcpp/tsession"'
-
-# Suffix aliases
-alias -s png=icat
-alias -s jpg=icat
-alias -s svg=icat
-alias -s mp4=mpv
-alias -s mov=mpv
-alias -s mkv=mpv
-alias -s md=glow
+source $HOME/.config/zsh/aliases.zsh
 
 # Highlighting
 typeset -A ZSH_HIGHLIGHT_STYLES

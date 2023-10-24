@@ -28,6 +28,10 @@ def_key "N"
 
 def_key "g"
     pause
+def_key "space"
+    run_action
+def_key "space"
+    play_item
 
 def_key "ctrl-h"
     previous
@@ -62,14 +66,58 @@ def_key "="
 def_key "escape"
     show_playlist
 
-
 # Browse
 
-def_key "f"
+def_key "e"
     show_browser
-def_key "f"
+def_key "e"
     change_browse_mode
 
+# Search
+
+def_key "f"
+    show_search_engine
+def_key "f"
+    reset_search_engine
+
+# Library
+
+def_key "b"
+    show_media_library
+def_key "b"
+    toggle_media_library_columns_mode
+
+# Playlist Editor
+
+def_key "p"
+    show_playlist_editor
+
+# Tag Editor
+
+def_key "t"
+    show_tag_editor
+
+# Edit
+
+def_key "i"
+    edit_song
+def_key "i"
+    edit_library_tag
+def_key "i"
+    edit_library_album
+def_key "i"
+    edit_directory_name
+def_key "i"
+    edit_playlist_name
+def_key "i"
+    edit_lyrics
+
+# Info
+
+def_key "n"
+    show_song_info
+def_key "N"
+    show_artist_info
 
 # Misc
 
