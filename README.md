@@ -20,7 +20,7 @@ zsh-syntax-highlighting-git zsh-autosuggestions-git pipewire pipewire-pulse pipe
 wireplumber lsp-plugins calf glow-git mpv tofi-git lazygit-git neovim-git dunst-git swayidle-git \
 swaylock-effects-git grim slurp swappy wl-clipboard ripgrep npm bibata-cursor-theme hyprland-git \
 kora-icon-theme-git opentabletdriver-git xdg-desktop-portal-hyprland bottom cava-git kitty \
-neofetch playerctl-git yt-dlp python-mutagen lf-git mpd ncmpcpp 
+neofetch yt-dlp python-mutagen lf-git mpd ncmpcpp 
 ```
 
 ### Set the zsh as a default shell

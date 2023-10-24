@@ -1,24 +1,80 @@
+# Movement
+
 def_key "j"
-  scroll_down
+    scroll_down
 def_key "k"
-  scroll_up
+    scroll_up
+
 def_key "h"
-  previous_column
+    previous_column
 def_key "l"
-  next_column
-def_key "ctrl-b"
-  page_up
-def_key "ctrl-u"
-  page_up
-def_key "ctrl-f"
-  page_down
-def_key "ctrl-d"
-  page_down
-def_key "g"
-  move_home
-def_key "G"
-  move_end
+    next_column
+
+
+# Search
+
+def_key "/"
+    find
+def_key "/"
+    find_item_forward
+
 def_key "n"
-  next_found_item
+    next_found_item
 def_key "N"
-  previous_found_item
+    previous_found_item
+
+
+# Controls
+
+def_key "g"
+    pause
+
+def_key "ctrl-h"
+    previous
+def_key "ctrl-l"
+    next
+
+# Queue
+
+def_key "d"
+    delete_playlist_items
+def_key "ctrl-d"
+    clear_playlist
+def_key "ctrl-d"
+    clear_main_playlist
+
+def_key "J"
+    move_selected_items_down
+def_key "K"
+    move_selected_items_up
+
+
+# Volume
+
+def_key "-"
+    volume_down
+def_key "="
+    volume_up
+
+
+# Playlist
+
+def_key "escape"
+    show_playlist
+
+
+# Browse
+
+def_key "f"
+    show_browser
+def_key "f"
+    change_browse_mode
+
+
+# Misc
+
+def_key "+"
+    show_clock
+
+def_key "."
+    show_lyrics
