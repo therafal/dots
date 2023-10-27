@@ -17,6 +17,7 @@ zsh-autosuggestions-git
 pipewire-pulse
 pipewire-alsa
 pipewire-jack
+pipewire-v4l2
 wireplumber
 lsp-plugins
 calf
@@ -30,7 +31,6 @@ tofi-git
 lazygit-git
 neovim-git
 dunst-git
-swayidle-git
 swaylock-effects-git
 grim
 slurp
