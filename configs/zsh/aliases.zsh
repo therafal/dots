@@ -1,8 +1,9 @@
 SUPER_USER="sudo"
 
 # Aliases
-alias sudo="$SUPER_USER "
 alias doas="$SUPER_USER "
+alias sudo="$SUPER_USER "
+alias es="$SUPER_USER "
 
 # terminal utils
 alias q='exit'
@@ -25,7 +26,9 @@ alias cat='bat'
 
 # terminal utils
 alias icat='kitten icat'
-alias cpw='wl-copy'
+alias cf='wl-copy <'
+alias pf='wl-paste >'
+alias cv='ffmpeg -i'
 
 # git
 alias g='git'
@@ -40,8 +43,17 @@ alias v='nvim'
 # download audio
 alias audl='yt-dlp -f bestaudio -x --audio-format opus --audio-quality 320k --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" --output "%(title)s.%(ext)s"'
 
+# neofetch
+alias nf='neofetch'
+
 # mpd player
 alias mp='tmux new-session -s $$ "tmux source-file ~/.config/ncmpcpp/tsession"'
+
+# power management
+alias poweroff='sudo loginctl poweroff'
+alias reboot='sudo loginctl reboot'
+alias logout='loginctl terminate-session ""'
+alias lock='swaylock'
 
 # Suffix aliases
 # images

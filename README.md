@@ -43,5 +43,5 @@ sudo cp -r etc/* /etc/
 git clone https://github.com/therafal/dots
 cd dots
 cp -r configs/* ~/.config/
-cp home/* ~
+cp home/.* ~
 ```
