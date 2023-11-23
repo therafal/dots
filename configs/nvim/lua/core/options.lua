@@ -51,7 +51,7 @@ vim.api.nvim_create_autocmd({ "BufReadPost" }, {
 
 vim.g.gui_font_default_size = 1
 vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "Iosevka Nerd Font Mono"
+vim.g.gui_font_face = "Mononoki Nerd Font Mono"
 
 RefreshGuiFont = function()
   vim.opt.guifont = string.format("%s:h%s",vim.g.gui_font_face, vim.g.gui_font_size)

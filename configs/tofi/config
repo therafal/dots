@@ -1,6 +1,6 @@
 ### Fonts
 
-font = "/usr/share/fonts/TTF/IosevkaNerdFont-Bold.ttf"
+font = "/usr/share/fonts/TTF/MononokiNerdFont-Bold.ttf"
 hint-font = true
 font-size = 24
 

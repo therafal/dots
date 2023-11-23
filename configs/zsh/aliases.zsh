@@ -15,10 +15,10 @@ alias yeet='paru -Runs'
 
 # ls
 alias eza='eza --icons --git'
-alias l='eza -l'
 alias ls='eza -l'
 alias ll='eza -la'
 alias ld='eza -lD'
+alias l='ls'
 
 # cat
 alias bat='bat --theme="base16" --style="numbers,changes,header" --italic-text=always --decorations=always'
@@ -48,12 +48,6 @@ alias nf='neofetch'
 
 # mpd player
 alias mp='tmux new-session -s $$ "tmux source-file ~/.config/ncmpcpp/tsession"'
-
-# power management
-alias poweroff='sudo loginctl poweroff'
-alias reboot='sudo loginctl reboot'
-alias logout='loginctl terminate-session ""'
-alias lock='swaylock'
 
 # Suffix aliases
 # images
